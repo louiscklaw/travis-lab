@@ -8,4 +8,4 @@ install:
   - pipenv install fabric3
 
 script:
-  - python hello.py
+  - fab helloworld
