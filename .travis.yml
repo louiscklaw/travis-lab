@@ -8,7 +8,8 @@ install:
   - pipenv install fabric3
 
 script:
-  - echo $TEST_NAME
+  - echo $UPLOAD_ISO
+  - echo $UPLOAD_LOG
   - fab helloworld
 
 notifications:
