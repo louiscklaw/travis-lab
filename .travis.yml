@@ -10,9 +10,5 @@ install:
 script:
   - fab helloworld
 
-secure: "ZnQbpINL/Bcce4jOUzLRqVLqc59RG6rRIybPs8yDnvYaI7K39IaxJrgqamyp2eyWokaSo/pXXnuui5l3gBPWFyE3dDSIclUa3QFouMkHVuoH3CpBRnYOMG5n8a7qrCa+z2c3w9mC1ivhMbY9gSPMGKgwPIoLSf8QoNVquZtBM167lAD+KT3b05KyHT99/oddC9pOKWobdK7wmpFiRC8JURP6WETsHs3GCjsOn+wtp2cOudU4XvDG8oMcZHoHVnnfFl9PoJx7znu2/3tzp2WPZEPpqYAk/z4O6Ea8GnJ3egeKlrbun34VDJDZrfpl0bDyZcfhM7ueHq+3ya5raKfJGl098aA8oK46p2G/GFciq8kVg4e644Z37R4RMDLjOqAnzHvBA8Zkc8XQ+6VNxXdkzhE38j3Ife8zfU8ugCRH55PER8gXedykcrXjJaVf+9fFuGMwVYpeNqVAzZF9Kwr5VxlruDPMRw4LuMNqGzRSvhFP5grVk4x2FYVuAeB8oLk5o8u7pzhp20QdTwMP10eFdT3k/SICb6WQgthdUuikXVc2CC/UC1zFjYxvPQE9keQuZMamGfsfPzHJ7PgMryMr4LQRGlSHGybBbw1Cm+WG8t1PZOmRmQ3H0QANy0eT0dTPwwwl9/SSjf0f07mZJNmAmzG0U+6V1YeuFBsbisg0d9g="
-
-after_success:
-  - "curl -o /tmp/travis-automerge https://raw.githubusercontent.com/cdown/travis-automerge/master/travis-automerge"
-  - "chmod a+x /tmp/travis-automerge"
-  - "BRANCHES_TO_MERGE_REGEX='^f/' BRANCH_TO_MERGE_INTO=develop GITHUB_REPO=cdown/srt /tmp/travis-automerge"
+notifications:
+  slack: louislabs:x4D51HjnR30LGpqZXrdbqUgB
