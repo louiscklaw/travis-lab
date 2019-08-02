@@ -20,4 +20,4 @@ def threaded_local(command):
 def helloworld():
     # p.map(threaded_local,['id'])
     p = multiprocessing.Pool(int(total_cpu_threads))
-    p.map(threaded_local, ['echo helloworld'] * 10)
+    p.map(threaded_local, ['echo helloworld'])
