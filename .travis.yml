@@ -12,3 +12,11 @@ script:
 
 notifications:
   slack: louislabs:x4D51HjnR30LGpqZXrdbqUgB
+
+deploy:
+  provider: releases
+  api_key:
+    secure: QqVyGBKVv3Uowgl26sWwW/uTElS+eT/16E29x+pX8d66ur9cMz7HMxiPPcyP3VZcjvJ05yqHABB0ps0jHXVBlD7EvNve/pYT5xOIguijvtTbGWhQmYr89ZUOvGcv9gNKYXXInT3MDMzDv4pJtSZXV2dy559qatF21A+4dS0MsdPdgc/8tUDb5dvqLtUf3QVs3kWCETDnKyQ6ISXGLFsqI+fA/99fSxudhvI76fBUEJOchsewwahVpLKqJftprageL6jEGU1vX88kVYfNCGVcySXm6XABCqJHdV2Wj9YGr83nyra/MKgplv+US9iZmgRjiV/bI22qAKQo+xSraCr2XeQUCaQ8jtZ0wdYbN3yxSwSJhC3Ter7mYS3/bzWJJn4sLTw/xNkz8xmo6azj8jPJOtU4txEOHMacp2rEzSg8kAyGUQ9A3HB28wppgDSpnSK+t3widDurhAwsyz01E1CSWcI+wGkAP8+fUx+XAgJQfUcH9DK1DsUNpQpsTQ5G7ckVfX3QjhOePLMOjT/7sX4AqbI+x1GZsFqyvWq27YtHAsXUSRnAzntTTtT5Qid+IdnM4yWitj7yg0UL5Risb0plJ/hhogkFX6oYaeQnAI0EG2pktHh6SxeqM3DshP4/UpAoJhm8rpXhBx/CVn5PsheL6ljuqIjPUeR8xZdLgannPfU=
+  file: README.md
+  on:
+    repo: louiscklaw/travis-lab
